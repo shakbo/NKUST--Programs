@@ -34,6 +34,7 @@ int main() {
       printf("c > b > a");
     }
   }
+  
   printf("\n\n"); //換行。
   system("pause"); //暫停程式，防止視窗提前關閉。
 }
