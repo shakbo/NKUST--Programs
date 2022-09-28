@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main() {
-  int a, b, c;
+  int a, b, c; //宣告整數 a b c，用於儲存使用者輸入及比較大小。 
 
   printf("請輸入 a 的值 > "); //輸出函數，提示使用者輸入。
   scanf("%d", &a); //取得使用者輸入的值，並存於 a。
@@ -34,7 +34,7 @@ int main() {
       printf("c > b > a");
     }
   }
-  
+
   printf("\n\n"); //換行。
   system("pause"); //暫停程式，防止視窗提前關閉。
 }
