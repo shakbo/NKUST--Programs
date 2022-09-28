@@ -13,6 +13,7 @@ int GetINT(void) {
 
 /*
   上方函數的原始版本
+  其含有要傳送的訊息的設定值
 
   int scanint(const char *const message) {
       int value;
