@@ -6,7 +6,7 @@
 int GetINT(void) {
   int input; //宣告整數，用於輸入暫存。
 
-  printf("請輸入一個整數 > ");//輸出函數，提示使用者輸入。
+  printf("請輸入一個整數 > "); //輸出函數，提示使用者輸入。
 
   while (!(scanf("%d", &input) && getchar() == '\n')) { //判斷數值是否符合要求。
     while (getchar() != '\n'); //清除 getchar() 的暫存值。
