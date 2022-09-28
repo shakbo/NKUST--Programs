@@ -6,7 +6,7 @@
 int GetINT(void) {
   int input; //宣告整數，用於輸入暫存。
 
-  printf("請輸入一個整數");//輸出函數，提示使用者輸入。
+  printf("請輸入一個整數 > ");//輸出函數，提示使用者輸入。
 
   while (!(scanf("%d", &input) && getchar() == '\n')) { //判斷數值是否符合要求。
     while (getchar() != '\n'); //清除 getchar() 的暫存值。
@@ -18,40 +18,48 @@ int GetINT(void) {
 
 void guess(int min, int max, int chances) { 
   int sys_answer = 0, usr_answer = 0; //宣告整數，用於儲存程式的答案以及使用者的猜測。
-  int guessed = 0; //宣告整數，用於紀錄已猜了幾次。
+  int chances_left = 0, guessed = 0; //宣告整數，用於紀錄已猜了幾次。
 
   srand(time(NULL)); //建立亂數種子。
-  
-  sys_answer = randint(max - min + 1) + min; //在 min 和 max 中間取一個隨機數。
 
-  printf("猜一個介於 %d 和 %d 之間的數字\n", min, max); //輸出函數，告知使用者答案範圍。
+  sys_answer = (rand() % (max - min + 1) + min);
+  
+  //sys_answer = randint(max - min + 1) + min; //在 min 和 max 中間取一個隨機數。
+
+  printf("猜一個介於 %d 和 %d 之間的數字 > \n", min, max); //輸出函數，告知使用者答案範圍。
 
   do { //迴圈，當使用者還沒猜到答案時執行。
-    if (guessed > chances - 1) { //判斷 猜的次數 是否大於 給的機會
+    if (guessed > chances - 1) {
       printf("You Loose!\n"); //輸出函數，提示遊戲結束。
-      break; //中斷循環。
+      break;
     }
+    
 
     usr_answer = GetINT(); //取得使用者輸入的值，並存於 usr_answer。
+    guessed++; //將已猜的次數增加。
+    chances_left = chances - guessed;
 
-    if (usr_answer > sys_answer) { //判斷 猜的值 是否大於 程式的答案。
-      max = usr_answer; //降最大值設為使用者的答案
-      printf("再低一點! (%d ~ %d)\n", min, max); //輸出函數，提示使用者再低，並告知範圍。
-      guessed++; //將已猜的次數增加。
-    } else if (usr_answer < sys_answer) { //判斷 猜的值 是否小於 程式的答案。
-      min = usr_answer; //降最小值設為使用者的答案
-      printf("再高一點! (%d ~ %d)\n", min, max); //輸出函數，提示使用者再高，並告知範圍。
-      guessed++; //將已猜的次數增加。
-    } else {
-      printf("猜到啦!!"); //輸出函數，提示使用者已經猜到答案。
+    if (guessed <= chances - 1) {
+      if (usr_answer > sys_answer) { //判斷 猜的值 是否大於 程式的答案。
+        max = usr_answer; //降最大值設為使用者的答案
+        printf("再低一點! (%d ~ %d)\n", min, max); //輸出函數，提示使用者再低，並告知範圍。
+        printf("還剩下 %d 次機會", chances_left);
+      } else if (usr_answer < sys_answer) { //判斷 猜的值 是否小於 程式的答案。
+        min = usr_answer; //降最小值設為使用者的答案
+        printf("再高一點! (%d ~ %d)\n", min, max); //輸出函數，提示使用者再高，並告知範圍。
+        printf("還剩下 %d 次機會", chances_left);
+      } else {
+        printf("猜到啦!!"); //輸出函數，提示使用者已經猜到答案。
+      }
     }
-  } while (usr_answer != sys_answer);  
+  } while ((usr_answer != sys_answer) || (guessed <= chances-1));
 }
 
 int main()  {
-  int min = 0, max = 100, chances=5; //宣告遊戲基礎設定值。
+  int min = 0, max = 100, chances = 5; //宣告遊戲基礎設定值。
 
   guess(min, max, chances); //呼叫遊戲邏輯
+  system("pause"); //暫停程式，防止視窗提前關閉。
 
   return 0; //安全跳出
 }
