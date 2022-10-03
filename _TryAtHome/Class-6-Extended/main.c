@@ -13,7 +13,7 @@ int GetINT(void) {
 }
 
 int main() {
-  int nums[3] = {}; //宣告整數陣列，3代表可以儲存3個值。
+  int nums[3] = {}; //宣告整數陣列，3代表可以儲存3個值。更多內容請見
   int ArraySize = 3; //宣告整數，用以方便管理後面的for迴圈。
   int temp; //宣告整數，用於暫存值。
 
