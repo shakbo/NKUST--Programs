@@ -14,13 +14,11 @@ int main() {
   scanf("%d", &c); //取得使用者輸入的值，並存於 a。
 
   if ((a > b) && (b > c)) printf("%d > %d > %d", a, b, c); //組合邏輯加最簡化比大小
-  if ((a > c) && (c > b)) printf("%d > %d > %d", a, c, b); //組合邏輯加最簡化比大小
-
-  if ((b > a) && (a > c)) printf("%d > %d > %d", b, a, c); //組合邏輯加最簡化比大小
-  if ((b > c) && (c > a)) printf("%d > %d > %d", b, c, a); //組合邏輯加最簡化比大小
-
-  if ((c > a) && (a > b)) printf("%d > %d > %d", c, a, b); //組合邏輯加最簡化比大小
-  if ((c > b) && (b > a)) printf("%d > %d > %d", c, b, a); //組合邏輯加最簡化比大小
+  else if ((a > c) && (c > b)) printf("%d > %d > %d", a, c, b); //組合邏輯加最簡化比大小
+  else if ((b > a) && (a > c)) printf("%d > %d > %d", b, a, c); //組合邏輯加最簡化比大小
+  else if ((b > c) && (c > a)) printf("%d > %d > %d", b, c, a); //組合邏輯加最簡化比大小
+  else if ((c > a) && (a > b)) printf("%d > %d > %d", c, a, b); //組合邏輯加最簡化比大小
+  else printf("%d > %d > %d", c, b, a); //組合邏輯加最簡化比大小
 
   printf("\n\n"); //換行。
   system("pause"); //暫停程式，防止視窗提前關閉。
