@@ -22,6 +22,6 @@ int main() {
   if ((c > a) && (a > b)) printf("%d > %d > %d", c, a, b); //組合邏輯加最簡化比大小
   if ((c > b) && (b > a)) printf("%d > %d > %d", c, b, a); //組合邏輯加最簡化比大小
 
-  printf("\n\n");
-  system("pause");
+  printf("\n\n"); //換行。
+  system("pause"); //暫停程式，防止視窗提前關閉。
 }
