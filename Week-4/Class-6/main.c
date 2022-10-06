@@ -14,16 +14,16 @@ int main() {
   scanf("%d", &c); //取得使用者輸入的值，並存於 c。
 
   if (a > b) { //判斷 a 是否大於 b。
-    if (b > c) printf("a > b > c"); //判斷 b 是否大於 c。
+    if (b > c) printf("a > b > c"); //判斷 b 是否大於 c，如果 b 大於 c 輸出 a > b > c。
     else { //如果 b 小於 c。
-      if (a > c) printf("a > c > b"); //判斷 a 是否大於 c。
-      else printf("c > a > b");
+      if (a > c) printf("a > c > b"); //判斷 a 是否大於 c，如果 a 大於 c 輸出 a > c > b。
+      else printf("c > a > b"); //如果 a 小於 c 輸出 c > a > b。
     }
   } else { //如果 b 小於 a。
     if (b > c) { //判斷 b 是否大於 c。
-      if (a > c) printf("b > a > c"); //判斷 a 是否大於 c。
-      else printf("b > c > a");
-    } else printf("c > b > a");
+      if (a > c) printf("b > a > c"); //判斷 a 是否大於 c，如果 a 大於 c 輸出 b > a > c。
+      else printf("b > c > a"); //如果 a 小於 c 輸出 b > c > a。
+    } else printf("c > b > a"); //如果 b 小於 c 輸出 c > b > a。
   }
 
   printf("\n\n"); //換行。

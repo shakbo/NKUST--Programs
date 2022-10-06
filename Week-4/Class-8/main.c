@@ -16,8 +16,8 @@ int main() {
   printf("請輸入 d 的值 > "); //輸出函數，提示使用者輸入。
   scanf("%d", &d); //取得使用者輸入的值，並存於 d。
 
-  int max = a;
-  int min = a;
+  int max = a; //將 max 的值設為 a 的值。
+  int min = a; //將 min 的值設為 a 的值。
 
   if (b > max) max = b; //如果 b 比 max 大，用 b 的值取代 max 的值。
   if (c > max) max = c; //如果 c 比 max 大，用 c 的值取代 max 的值。
@@ -27,8 +27,8 @@ int main() {
   if (c < min) min = c; //如果 c 比 min 小，用 c 的值取代 min 的值。
   if (d < min) min = d; //如果 d 比 min 小，用 d 的值取代 min 的值。
 
-  printf("最大值為 %d\n", max);
-  printf("最小值為 %d", min);
+  printf("最大值為 %d\n", max); //輸出函數，告知使用者最大值是多少。
+  printf("最小值為 %d", min); //輸出函數，告知使用者最小值是多少。
 
   printf("\n\n"); //換行。
   system("pause"); //暫停程式，防止視窗提前關閉。

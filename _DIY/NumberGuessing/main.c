@@ -23,8 +23,6 @@ void guess(int min, int max, int chances) {
   srand(time(NULL)); //建立亂數種子。
 
   sys_answer = (rand() % (max - min + 1) + min);
-  
-  //sys_answer = randint(max - min + 1) + min; //在 min 和 max 中間取一個隨機數。
 
   printf("猜一個介於 %d 和 %d 之間的數字 > \n", min, max); //輸出函數，告知使用者答案範圍。
 
@@ -37,7 +35,7 @@ void guess(int min, int max, int chances) {
 
     usr_answer = GetINT(); //取得使用者輸入的值，並存於 usr_answer。
     guessed++; //將已猜的次數增加。
-    chances_left = chances - guessed;
+    chances_left = chances - guessed; //將機會(chances)與已猜的次數(guessed)相減以取得剩餘的次數(chances_left)。
 
     if (guessed <= chances - 1) {
       if (usr_answer > sys_answer) { //判斷 猜的值 是否大於 程式的答案。
@@ -58,8 +56,8 @@ void guess(int min, int max, int chances) {
 int main()  {
   int min = 0, max = 100, chances = 5; //宣告遊戲基礎設定值。
 
-  guess(min, max, chances); //呼叫遊戲邏輯
+  guess(min, max, chances); //呼叫遊戲邏輯。
   system("pause"); //暫停程式，防止視窗提前關閉。
 
-  return 0; //安全跳出
+  return 0; //安全跳出。
 }
