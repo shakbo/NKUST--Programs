@@ -7,12 +7,12 @@
 &emsp;
 ## 資料夾結構及翻譯
 
-    NKUST--Programs
-    |--Week-X = 第 X 周
-    |----Class-X = 第 X 課
-    |--_Additionals = 補充資料(可能是圖片或檔案)
-    |--_DIY = 作者的創作
-    |----Extension of WXCY = 第 X 周第 X 課的延伸
+### NKUST--Programs
+- Week-X = 第 X 周
+- + Class-X = 第 X 課
+- _Additionals = 補充資料(可能是圖片或檔案)
+- _DIY = 課堂的延伸
+- + Extension of WXCY- = 第 X 周第 X 課的延伸
 
 &emsp;
 ## 版權聲明
