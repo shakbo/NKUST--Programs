@@ -12,7 +12,7 @@
 - + Class-X = 第 X 課
 - _Additionals = 補充資料(可能是圖片或檔案)
 - _DIY = 課堂的延伸
-- + EXAM = 上課考試
+- + EXAM = 上課考試解答(我的解法)
 - + - Week-X = 第 X 周
 - + Extension of WXCY = 第 X 周第 Y 課的延伸
 
