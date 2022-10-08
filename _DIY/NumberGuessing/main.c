@@ -54,6 +54,9 @@ void guess(int min, int max, int chances) {
 }
 
 int main()  {
+  system("chcp 65001"); //UTF-8 主控台字碼頁 
+  system("cls"); //清除命令提示字元
+  
   int min = 0, max = 100, chances = 5; //宣告遊戲基礎設定值。
 
   guess(min, max, chances); //呼叫遊戲邏輯。

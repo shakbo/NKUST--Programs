@@ -13,6 +13,9 @@ int GetINT(void) {
 }
 
 int main() {
+  system("chcp 65001"); //UTF-8 主控台字碼頁 
+  system("cls"); //清除命令提示字元
+  
   int nums[3] = {}; //宣告整數陣列，3代表可以儲存3個值。更多內容請見 _Additionals 資料夾內之 Array.png 。
   int ArraySize = 3; //宣告整數，用以方便管理後面的for迴圈。
   int temp; //宣告整數，用於暫存值。

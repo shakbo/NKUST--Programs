@@ -49,6 +49,9 @@ void Logic(void) {
 }
 
 int main(void) {
+  system("chcp 65001"); //UTF-8 主控台字碼頁 
+  system("cls"); //清除命令提示字元
+  
   int done=0, IsContinue=0; //宣告整數，用於判斷是否繼續。
   while (done==0) { //使函數陷入"死"循環，一般不建議這麼使用。
     Logic(); //呼叫主邏輯函數。
