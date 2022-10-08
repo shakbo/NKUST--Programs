@@ -2,9 +2,6 @@
 #include <stdlib.h>
 
 int main() {
-  system("chcp 65001"); //UTF-8 主控台字碼頁 
-  system("cls"); //清除命令提示字元
-
   int a, b, c, d; //宣告整數 a b c，用於儲存使用者輸入及比較大小。
 
   printf("請輸入 a 的值 > "); //輸出函數，提示使用者輸入。
