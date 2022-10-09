@@ -7,18 +7,18 @@
 &emsp;
 ## 資料夾結構及翻譯
 
-### NKUST--Programs
-- Week-X = 第 X 周
-- + Class-X = 第 X 課
-- _Additionals = 補充資料(可能是圖片或檔案)
-- _DIY = 課堂的延伸
-- + EXAM = 上課考試解答(我的解法)
-- + - Week-X = 第 X 周
-- + Extension of WXCY = 第 X 周第 Y 課的延伸
-- _Untranslated book pdfs = 原文書電子檔
-- + C.How.to.Program.8-e(.pdf) = 學校課本
-- + The.C.Programming.Language.2-e(.pdf) = C語言聖典
-- readme.md = 該說明檔
+    .
+    ├── Week-X                                      #第 X 周
+    │   └── Class-X                                 #第 X 課
+    ├── _Additionals                                #各種補充檔案
+    ├── _Extension                                  #課堂延伸
+    │   ├── EXAM                                    #隨堂考試
+    │   │   └── Week-X                              #第 X 周
+    │   └── Extension of WXCY                       #第 X 周第 X 課的延伸
+    ├── _Untranslated book pdfs                     #原文書電子檔
+    │   ├── C.How.to.Program.8-e(.pdf)              #課本
+    │   └── The.C.Programming.Language.2-e(.pdf)    #C 語言聖典
+    └── readme.md                                   #該檔案
 
 &emsp;
 ## 版權聲明
