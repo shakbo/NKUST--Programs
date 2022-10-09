@@ -7,7 +7,19 @@
 &emsp;
 ## 資料夾結構及翻譯
 
-### NKUST--Programs
+    .
+    ├── Week-X                                      #第 X 周
+    │   └── Class-X                                 #第 X 課
+    ├── _Additionals                                #各種補充檔案
+    ├── _DIY                                        #
+    │   ├── EXAM
+    │   │   └── Week-X
+    │   └── Extension of WXCY
+    ├── _Untranslated book pdfs
+    │   ├── C.How.to.Program.8-e(.pdf)
+    │   └── The.C.Programming.Language.2-e(.pdf)
+    └── readme.md
+
 - Week-X = 第 X 周
 - + Class-X = 第 X 課
 - _Additionals = 補充資料(可能是圖片或檔案)
