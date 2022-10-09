@@ -8,16 +8,21 @@
 ## 資料夾結構及翻譯
 
     .
-    ├── Week-X                                      #第 X 周
-    │   └── Class-X                                 #第 X 課
+    ├── Weeks                                       #每周資料夾
+    │   └── Week-X                                  #第 X 周
+    │       └── Class-X                             #第 X 課
+    │
     ├── _Additionals                                #各種補充檔案
+    │
     ├── _Extension                                  #課堂延伸
     │   ├── EXAM                                    #隨堂考試
     │   │   └── Week-X                              #第 X 周
     │   └── Extension of WXCY                       #第 X 周第 X 課的延伸
+    │
     ├── _Untranslated book pdfs                     #原文書電子檔
     │   ├── C.How.to.Program.8-e(.pdf)              #課本
     │   └── The.C.Programming.Language.2-e(.pdf)    #C語言聖典
+    │
     └── readme.md                                   #該檔案
 
 &emsp;
