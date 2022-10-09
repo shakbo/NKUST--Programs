@@ -15,7 +15,7 @@
 - + EXAM = 上課考試解答(我的解法)
 - + - Week-X = 第 X 周
 - + Extension of WXCY = 第 X 周第 Y 課的延伸
-- C_How_to_Program_8-e.pdf = 原文書
+- C_How_to_Program_8-e.pdf = 原文書電子檔
 - readme.md = 該說明檔
 
 &emsp;
