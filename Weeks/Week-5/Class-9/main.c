@@ -14,7 +14,7 @@ int main() {
     scanf("%d", &year);
 
     if(year<=0) printf("不存在!");
-    else if((year%400==0) || ((year%4)==0&&(year%100)!=0)) printf("是閏年");
+    else if((year%400==0) || ((year%4)==0 && (year%100)!=0)) printf("是閏年");
     else printf("不是閏年") ;
 
     printf("\n\n");
