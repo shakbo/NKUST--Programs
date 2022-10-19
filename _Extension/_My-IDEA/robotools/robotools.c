@@ -43,8 +43,8 @@ int main(int argc, char** argv)
   } 
   else if ((strcmp(argv[1], "--help") == 0) || (strcmp(argv[1], "-help") == 0) || (strcmp(argv[1], "help") == 0)) {
     printf(" batteryreport # Create battery report.\n");
-    printf(" openreport # Open battery report.\n");
-    printf(" deletereport # Delete battery report.\n");
+    printf(" openreport    # Open battery report.\n");
+    printf(" deletereport  # Delete battery report.\n");
     printf(" openreportdir # Open battery report directory.\n\n");
   }else {
     printf("No commands match!\n");
