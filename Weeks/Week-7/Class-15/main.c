@@ -8,19 +8,23 @@ int main() {
   float total, rate;
   int years;
 
-  printf("請輸入欲存入的金額(NT$) > ");
-  scanf("%f", &total);
+  for(int k=1; k<=5; k++) {
+    printf("請輸入欲存入的金額(NT$) > ");
+    scanf("%f", &total);
 
-  printf("請輸入利率(%) > ");
-  scanf("%f", &rate);
-  rate=rate/100;
+    printf("請輸入利率(%) > ");
+    scanf("%f", &rate);
+    rate=rate/100;
 
-  printf("請輸入幾年 > ");
-  scanf("%d", &years);
+    printf("請輸入幾年 > ");
+    scanf("%d", &years);
 
-  for(int i=1; i<=years; i++) {
-    total = total + total*rate; //10450=10000+10000*0.045
-    printf("第 %d 年年尾金額: %f\n", i, total);
+    for(int i=1; i<=years; i++) {
+      total = total + total*rate; //10450=10000+10000*0.045
+      printf("第 %d 年年尾金額: %f\n", i, total);
+    }
+
+    printf("\n");
   }
 
   printf("\n\n");
