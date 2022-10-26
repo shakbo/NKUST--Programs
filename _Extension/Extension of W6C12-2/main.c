@@ -34,7 +34,7 @@ int main() {
   int OddNumSize = (sizeof(OddNums)/sizeof(*OddNums));
   int EvenNumSize = (sizeof(EvenNums)/sizeof(*EvenNums));
 
-  printf("其中是奇數的有\n");
+  printf("其中是奇數的有 %d 個，分別是： \n", OddCounter);
   for(int i=0; i<=OddNumSize; i++) {
     if(OddNums[i]==0) break;
     else printf("%d\n", OddNums[i]);
@@ -42,14 +42,11 @@ int main() {
 
   printf("\n\n");
 
-  printf("其中是偶數的有\n");
+  printf("其中是偶數的有 %d 個，分別是： \n", EvenCounter);
   for(int i=0; i<=EvenNumSize; i++) {
     if(EvenNums[i]==0) break;
     else printf("%d\n", EvenNums[i]);
   }
-
-  //printf("因數中有 %d 個是偶數", EvenCounter); //印出有幾個因數
-  //printf("因數中有 %d 個是奇數", OddCounter); //印出有幾個因數
 
   printf("\n\n");
   system("pause");
