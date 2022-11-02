@@ -28,10 +28,10 @@ void guess(int min, int max, int chances) {
 
   do { //迴圈，當使用者還沒猜到答案時執行。
     if (guessed > chances - 1) {
-      printf("You Loose!\n"); //輸出函數，提示遊戲結束。
+      printf("你輸了!\n"); //輸出函數，提示遊戲結束。
+      printf("答案是 %d", sys_answer);
       break;
     }
-    
 
     usr_answer = GetINT(); //取得使用者輸入的值，並存於 usr_answer。
     guessed++; //將已猜的次數增加。
@@ -48,6 +48,7 @@ void guess(int min, int max, int chances) {
         printf("還剩下 %d 次機會", chances_left);
       } else {
         printf("猜到啦!!"); //輸出函數，提示使用者已經猜到答案。
+        break;
       }
     }
   } while ((usr_answer != sys_answer) || (guessed <= chances-1));
@@ -60,6 +61,7 @@ int main()  {
   int min = 0, max = 100, chances = 5; //宣告遊戲基礎設定值。
 
   guess(min, max, chances); //呼叫遊戲邏輯。
+  printf("\n\n");
   system("pause"); //暫停程式，防止視窗提前關閉。
 
   return 0; //安全跳出。
