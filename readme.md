@@ -18,14 +18,19 @@
     .
     ├── Weeks                                     #每周資料夾
     │   └── Week-X                                #第 X 周
-    │       └── Class-X                           #第 X 課
+    │       ├── AfterClass                        #課後輔導
+    │       │   ├── Ext-X                         #延伸 X
+    │       │   └── Question-X                    #問題 X
+    │       ├── Class-X                           #第 X 課
+    │       └── Work-X                            #課間作業
     │
     ├── _Additionals                              #各種補充檔案
     │
     ├── _Extension                                #課堂延伸
+    │   ├── _My-IDEA                              #個人想法的實現
     │   ├── EXAM                                  #隨堂考試
     │   │   └── Week-X                            #第 X 周
-    │   └── Extension of WXCY                     #第 X 周第 X 課的延伸
+    │   └── Extension of WXCY(-Z)                 #第 X 周第 X 課的延伸(分支 Z)
     │
     ├── _Untranslated book pdfs                   #原文書電子檔
     │   ├── C.How.to.Program.8-e(.pdf)            #課本
