@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 int main() {
-  for(int x=1; x<=40; x++) {
-    for(int y=20; y>=1; y--) {
-      if((x*2 + y*4)==80) {
-        printf("%d 隻雞 %d 隻兔子\n", x, y);
+  for(int chickens=1; chickens<=40; chickens++) {
+    for(int rabbits=20; rabbits>=1; rabbits--) {
+      if((chickens*2 + rabbits*4)==80) {
+        printf("%d 隻雞 %d 隻兔子\n", chickens, rabbits);
       }
     }
   }
