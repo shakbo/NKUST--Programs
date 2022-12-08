@@ -12,7 +12,7 @@ int main() {
   else if((original_price >= 1000) && (original_price < 10000)) calculated_price = original_price * 0.9;
   else if(original_price >= 10000) calculated_price = original_price * 0.85;
 
-  printf("應付價格: %lf", calculated_price);  
+  printf("應付價格: %lf", calculated_price);
 
   printf("\n\n");
   system("pause");
