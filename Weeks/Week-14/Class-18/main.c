@@ -23,5 +23,5 @@ int main() { // 主程式
   result = add_from_1_to_given_number(number); // 呼叫函數，副程式
   printf("result= %d", result);
 
-  return 0;
+  return 0; // 告訴系統執行完畢
 }
