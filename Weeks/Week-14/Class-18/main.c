@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int from_1_to_given_num(int num) {
+int add_from_1_to_given_num(int num) {
   int sum=0;
 
   for(int i=0; i<=num; i++) {
@@ -16,7 +16,7 @@ int from_1_to_given_num(int num) {
 int main() {
   int num;
 
-  num = from_1_to_given_num(100);
+  num = add_from_1_to_given_num(100);
   printf("num= %d", num);
 
   return 0;
