@@ -1,3 +1,10 @@
+/*
+試設計一函數，計算因數數量
+ex:
+  F(6) = 3
+  F(12) = 6
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
