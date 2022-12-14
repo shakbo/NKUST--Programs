@@ -1,22 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int checkprimenumber(int cpn);
+int checkisprime(int cpn);
 
 int main() {
   int N;
   printf("請輸入數字: ");
   scanf("%d", &N);
 
-  int prime = checkprimenumber(N);
+  int prime = checkisprime(N);
   if(prime) printf("%d 是質數", N);
-  if(!prime) printf("%d 不是質數", N);
+  else if(!prime) printf("%d 不是質數", N);
 
-  printf("\n\n");
-  system("pause");
+  return 0;
 }
 
-int checkprimenumber(int cpn) {
+int checkisprime(int cpn) {
   int prime = 1;
   if(cpn == 0 || cpn == 1) {
     prime = 0;
