@@ -14,10 +14,13 @@ int add_from_1_to_given_num(int num) {
 }
 
 int main() {
-  int num;
+  int num, result;
 
-  num = add_from_1_to_given_num(100);
-  printf("num= %d", num);
+  printf("請輸入num: ");
+  scanf("%d", &num);
+
+  result = add_from_1_to_given_num(num);
+  printf("num= %d", result);
 
   return 0;
 }
