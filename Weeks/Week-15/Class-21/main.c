@@ -6,7 +6,7 @@
 
 double finalMoney(double money, double rate, double years) {
   for(int i=0; i<years; i++) {
-    money += money * rate;
+    money *= (1+rate);
   }
   return money;
 }
