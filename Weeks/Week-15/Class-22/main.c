@@ -12,8 +12,8 @@ int function(int men, double rate_men, int women, double rate_women) {
   while (men>women) {
     men *= (1+rate_men);
     women *= (1+rate_women);
-    printf("總人口數(男/女)=(%d/%d)\n", men, women);
     years += 1;
+    printf("第%d年總人口數(男/女)=(%d/%d)\n", years, men, women);
   }
   return years;
 }
