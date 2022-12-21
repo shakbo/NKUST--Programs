@@ -19,7 +19,7 @@ int function(int men, double rate_men, int women, double rate_women) {
 }
 
 int main() {
-  int ans;
-  ans = function(35000, 0.03, 30000, 0.07);
-  printf("%d 年後女生人數會超越男生", ans);
+  int answer;
+  answer = function(35000, 0.03, 30000, 0.07);
+  printf("%d 年後女生人數會超越男生", answer);
 }
