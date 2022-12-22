@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int calculateSize(const int height,const int width) {
+int calculateArea(const int height,const int width) {
   return height*width;
 }
 
@@ -14,5 +14,5 @@ int main() {
   printf("寬= ");
   scanf("%d", &width);
 
-  printf("面積為: %d", calculateSize(height, width));
+  printf("面積為: %d", calculateArea(height, width));
 }
