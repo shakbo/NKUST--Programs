@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void fun(int A, int B) {
+void function(int A, int B) {
   for(int i=A; i<=B; i++) {
     if(((i%3!=0)&&(i%4!=0)&&(i%5!=0))) {
       printf("i=%3d\n", i);
@@ -15,5 +15,6 @@ void fun(int A, int B) {
 }
 
 int main() {
-  fun(10, 36);
+  function(10, 36);
+  return 0;
 }
