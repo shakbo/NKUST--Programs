@@ -3,6 +3,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* Original function:
+int convertToCoin(int cash) {
+  int totalAmout=0;
+  for(int d10=0; d10<=cash; d10++) {
+    for(int d5=0; d5<=cash; d5++) {
+      for(int d1=0; d1<=cash; d1++) {
+        if((d10*10+d5*5+d1) == cash) {
+          printf("%3d個 10元 /%3d個 5元 /%3d個 1元\n", d10, d5, d1);
+          totalAmout++;
+        }
+      }
+    }
+  }
+  return totalAmout;
+}
+*/
+
 int convertToCoin(int cash) {
   int totalAmout=0;
   for(int d10=0; d10<=cash/10; d10++) {
