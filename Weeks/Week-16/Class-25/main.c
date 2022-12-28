@@ -10,13 +10,11 @@ int convertToCoin(int cash) {
     for(int d5=0; d5<=cash; d5++) {
       for(int d1=0; d1<=cash; d1++) {
         if((d10*10+d5*5+d1) == cash) {
-          printf("%3d個 10元 /%3d個 5元 /%3d個 1元\n", d10, d5, d1);
-          totalAmout++;
+          printf("%3d個 10元 /%3d個 5元 /%3d個 1元  共有 %3d 個硬幣\n", d10, d5, d1, d10+d5+d1);
         }
       }
     }
   }
-  return totalAmout;
 }
 */
 
@@ -26,24 +24,20 @@ int convertToCoin(int cash) {
     for(int d5=0; d5<=cash/5; d5++) {
       int d1 = cash - d10*10 - d5*5;
       if(d1 >= 0) {
-        printf("%3d個 10元 /%3d個 5元 /%3d個 1元\n", d10, d5, d1);
-        totalAmout++;
+        printf("%3d個 10元 /%3d個 5元 /%3d個 1元 共有 %3d 個硬幣\n", d10, d5, d1, d10+d5+d1);
       }
     }
   }
-  return totalAmout;
 }
 
 int main() {
   int cash;
-  int totalCoinsAmount=0;
 
   printf("請輸入金額: ");
   scanf("%d", &cash);
 
   printf("共有以下組合: \n");
-  totalCoinsAmount = convertToCoin(cash);
-  printf("共有 %3d 個硬幣", totalCoinsAmount);
+  convertToCoin(cash);
 
   return 0;
 }
