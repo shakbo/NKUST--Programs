@@ -32,7 +32,6 @@ void listRanking(int howManyYears, int city_1, int city_2, int city_3) {
     else if((city_3 > city_2)&&(city_2 > city_1)) {
       printf("丙 > 乙 > 甲");
     }
-    printf(" \t%6d, %6d, %6d", city_1, city_2, city_3);
     printf("\n");
   }
 }
