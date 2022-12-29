@@ -16,27 +16,29 @@
 ## 資料夾結構及翻譯
 
     .
-    ├── Weeks                                     #每周資料夾
-    │   └── Week-X                                #第 X 周
-    │       ├── AfterClass                        #課後輔導
-    │       │   ├── Ext-X                         #延伸 X
-    │       │   └── Question-X                    #問題 X
-    │       ├── Class-X                           #第 X 課
-    │       └── Work-X                            #課間作業
+    ├───Course Materials                      #課程資料
+    │   ├─── Additional Practice              #課後輔導(練習)
+    │   │    └─── Week-X(~Y)                  #第X周(到第Y周)
+    │   │         ├─── Extension-X            #第X個額外題目
+    │   │         └─── Question-X(Homework)   #第X個題目(回家作業)
+    │   ├─── Class Notes                      #隨堂筆記
+    │   │    └─── Week-X                      #第X週
+    │   │         └─── Class-X                #第X課
+    │   ├─── Homework                         #作業
+    │   │    └─── Week-X                      #第X週
+    │   │         └─── Homework-X             #第X個作業
+    │   ├─── Quizzes                          #測驗
+    │   │    └─── Week-X                      #第X週
+    │   │         └─── Examination-X          #試卷X
+    │   └─── Supplementary Materials          #補充資料
+    │        ├─── Books                       #原文書
+    │        └─── Other Materials             #其他資料
     │
-    ├── _Additionals                              #各種補充檔案
+    ├─── Extensions                           #課堂延伸
+    │    ├─── My Ideas                        #個人想法的實現
+    │    └─── Official                        #官方延伸
     │
-    ├── _Extension                                #課堂延伸
-    │   ├── _My-IDEA                              #個人想法的實現
-    │   ├── EXAM                                  #隨堂考試
-    │   │   └── Week-X                            #第 X 周
-    │   └── Extension of WXCY(-Z)                 #第 X 周第 X 課的延伸(分支 Z)
-    │
-    ├── _Untranslated book pdfs                   #原文書電子檔
-    │   ├── C.How.to.Program.8-e(.pdf)            #課本
-    │   └── The.C.Programming.Language.2-e(.pdf)  #C語言聖典
-    │
-    └── readme.md                                 #該檔案
+    └── readme.md                             #說明文件
 
 &emsp;
 ## 版權聲明
