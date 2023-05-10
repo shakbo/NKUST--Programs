@@ -15,9 +15,9 @@ public class W12C1 {
 		final int ROW = studentCount+subjectBuffer;
 		
 		System.out.printf("幾項科目: ");
-		final int sujectCount = input.nextInt(); //取得應有多少行
+		final int subjectCount = input.nextInt(); //取得應有多少行
 		
-		final int COL = sujectCount+scoreBuffer; //得知應有多少行後加上暫存區塊
+		final int COL = subjectCount+scoreBuffer; //得知應有多少行後加上暫存區塊
 		
 		double[][] scoreArray = new double[ROW][COL]; //宣告陣列用以儲存個別學生的各科分數、總分及平均
 		
@@ -25,7 +25,7 @@ public class W12C1 {
 		for(int i=0; i<studentCount; i++) {
 			System.out.printf("------------------------------\n");
 			System.out.printf("第%d位學生\n", i+1); // 顯示第幾位學生
-			for(int j=0; j<sujectCount; j++) {
+			for(int j=0; j<subjectCount; j++) {
 				System.out.printf("  第%d科成績: ", j+1); // 顯示第幾科
 				scoreArray[i][j] = input.nextDouble(); // 取得的值並存入該學生的成績當中
 			}
@@ -33,21 +33,21 @@ public class W12C1 {
 		
 		// 計算個別學生的總和及平均
 		for(int i=0; i<studentCount; i++) {
-			for(int j=0; j<sujectCount; j++) {
-				scoreArray[i][sujectCount] += scoreArray[i][j]; // 計算總分(邏輯請見 註1)
+			for(int j=0; j<subjectCount; j++) {
+				scoreArray[i][subjectCount] += scoreArray[i][j]; // 計算總分(邏輯請見 註1)
 			}
-			scoreArray[i][sujectCount+1] = scoreArray[i][sujectCount] / sujectCount; // 計算平均(邏輯請見 註2)
+			scoreArray[i][subjectCount+1] = scoreArray[i][subjectCount] / subjectCount; // 計算平均(邏輯請見 註2)
 		}
 		
 		for(int i=0; i<studentCount; i++) {
-			for(int j=0; j<sujectCount; j++) {
+			for(int j=0; j<subjectCount; j++) {
 				scoreArray[studentCount][j] += scoreArray[i][j]; // 計算總分
 				scoreArray[studentCount+1][j] = scoreArray[studentCount][j] / studentCount; // 計算平均
 			}
 		}
 		/*
 			註1:
-				假設輸入2位學生 3個科目(即 ROW=2, sujectCount=3)
+				假設輸入2位學生 3個科目(即 ROW=2, subjectCount=3)
 				則陣列長這樣
 					[科目1成績][科目2成績][科目3成績]
 					[科目1成績][科目2成績][科目3成績]
@@ -65,12 +65,12 @@ public class W12C1 {
 					[1, 0][1, 1][1, 2][1, 3][1, 4]
 				
 					
-				而使用者輸入的 sujectCount(j) 為 3 對應至陣列即為 總分 的格子
+				而使用者輸入的 subjectCount(j) 為 3 對應至陣列即為 總分 的格子
 			
 			註2:
 				同上
-				scoreArray[i][sujectCount+1] 對應的為 平均 的格子
-				而此時 scoreArray[i][sujectCount] / sujectCount 
+				scoreArray[i][subjectCount+1] 對應的為 平均 的格子
+				而此時 scoreArray[i][subjectCount] / subjectCount 
 				即可看為 總分 / 科目數
 		*/
 		
